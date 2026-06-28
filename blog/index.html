@@ -3,63 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Journal — Words That Remain</title>
+  <title>Journal — Words to Remain</title>
   <meta name="description" content="Gentle, honest guidance on writing eulogies, navigating grief, and finding words for the people you love." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="shared.css" />
-  <style>
-    .blog-full-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
-    .blog-full-card { background:var(--white); border:1px solid var(--border); border-radius:2px; overflow:hidden; transition:transform 0.2s, box-shadow 0.2s; }
-    .blog-full-card:hover { transform:translateY(-3px); box-shadow:0 8px 30px rgba(61,82,70,0.08); }
-    .blog-card-img { height:200px; background:var(--card); display:flex; align-items:center; justify-content:center; }
-    .blog-card-img-mother { background:linear-gradient(135deg,#F5EDE8,#E8D5CC); }
-    .blog-card-img-general { background:linear-gradient(135deg,#E8EDF0,#C8D5DC); }
-    .blog-card-img-practical { background:linear-gradient(135deg,#E8EDE8,#C8D5C8); }
-    .blog-card-img-grief { background:linear-gradient(135deg,#EDE8F0,#D4C8DC); }
-    .blog-card-img-father { background:linear-gradient(135deg,#E8EDF0,#C8D8D0); }
-    .blog-card-img-deliver { background:linear-gradient(135deg,#F0EDE8,#DCCCC0); }
-    .blog-card-body { padding:1.5rem; }
-    .blog-card-body .blog-tag { display:block; margin-bottom:0.5rem; }
-    .blog-card-body .blog-title { font-size:1.15rem; margin-bottom:0.6rem; }
-    .blog-card-body .blog-meta { margin-bottom:0.6rem; }
-    .blog-card-body .blog-excerpt { margin-bottom:1rem; }
-    @media(max-width:900px){ .blog-full-grid{grid-template-columns:1fr;} }
-  </style>
+  <link rel="stylesheet" href="/shared.css" />
 </head>
 <body>
 
 <div class="overlay" id="overlay"></div>
-
 <nav class="mobile-menu" id="mobileMenu">
-  <a href="index.html">Home</a>
-  <a href="speeches.html">Our Speeches</a>
-  <a href="blog.html" class="active">Journal</a>
-  <a href="index.html#how">How It Works</a>
-  <a href="index.html#stories">Stories</a>
+  <a href="/">Home</a>
+  <a href="/speeches/">Our Speeches</a>
+  <a href="/blog/" class="active">Journal</a>
+  <a href="/#how">How It Works</a>
+  <a href="/#stories">Stories</a>
   <div class="mobile-currency">
     <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
     <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
   </div>
-  <a href="speeches.html" class="mobile-cta">Order Now</a>
+  <a href="/speeches/" class="mobile-cta">Order Now</a>
 </nav>
 
 <nav>
-  <a href="index.html" class="nav-logo">Words That Remain</a>
+  <a href="/" class="nav-logo">Words to Remain</a>
   <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="speeches.html">Our Speeches</a></li>
-    <li><a href="blog.html" class="active">Journal</a></li>
-    <li><a href="index.html#how">How It Works</a></li>
-    <li><a href="index.html#stories">Stories</a></li>
+    <li><a href="/">Home</a></li>
+    <li><a href="/speeches/">Our Speeches</a></li>
+    <li><a href="/blog/" class="active">Journal</a></li>
+    <li><a href="/#how">How It Works</a></li>
+    <li><a href="/#stories">Stories</a></li>
   </ul>
   <div class="nav-right">
     <div class="currency-switcher">
       <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
       <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
     </div>
-    <a href="speeches.html" class="nav-cta">Order Now</a>
+    <a href="/speeches/" class="nav-cta">Order Now</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -78,10 +59,10 @@
         <div class="blog-card-img blog-card-img-mother"></div>
         <div class="blog-card-body">
           <p class="blog-tag">Writing a Eulogy</p>
-          <a href="blog-how-to-write-eulogy-mother.html" class="blog-title">How to write a eulogy for your mother: a gentle guide</a>
+          <a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-title">How to write a eulogy for your mother: a gentle guide</a>
           <p class="blog-meta">6 min read · June 2026</p>
           <p class="blog-excerpt">Finding the right words for a mother's funeral is one of the hardest things you'll ever do. Here's a simple framework to help you begin.</p>
-          <a href="blog-how-to-write-eulogy-mother.html" class="blog-read-more">Read Article</a>
+          <a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-read-more">Read Article</a>
         </div>
       </div>
 
@@ -113,7 +94,7 @@
           <p class="blog-tag">Writing a Eulogy</p>
           <a href="#" class="blog-title">How to write a eulogy for your father</a>
           <p class="blog-meta">6 min read · May 2026</p>
-          <p class="blog-excerpt">A father's eulogy asks you to capture someone whose love may have shown itself in quiet ways — in actions, in presence, in things left unsaid. Here's how to find those words.</p>
+          <p class="blog-excerpt">A father's eulogy asks you to capture someone whose love may have shown itself in quiet ways — in actions, in presence, in things left unsaid.</p>
           <a href="#" class="blog-read-more">Read Article</a>
         </div>
       </div>
@@ -149,24 +130,24 @@
     <p class="section-eyebrow">Need more than words?</p>
     <h2 class="section-title">Let us write it for you</h2>
     <p>If reading this has made you realise you'd rather have someone else carry the writing — we're here. A personalised eulogy, delivered within 24 hours.</p>
-    <a href="speeches.html" class="btn-primary">See Our Speeches</a>
+    <a href="/speeches/" class="btn-primary">See Our Speeches</a>
   </div>
 </div>
 
 <footer>
   <div class="footer-inner">
-    <span class="footer-logo">Words That Remain</span>
+    <span class="footer-logo">Words to Remain</span>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="speeches.html">Our Speeches</a></li>
-      <li><a href="blog.html">Journal</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/speeches/">Our Speeches</a></li>
+      <li><a href="/blog/">Journal</a></li>
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
-  <p class="footer-copy">© 2026 Words That Remain. A service by Michelle Flares Studio.</p>
+  <p class="footer-copy">© 2026 Words to Remain. A service by Michelle Flares Studio.</p>
 </footer>
 
-<script src="shared.js"></script>
+<script src="/shared.js"></script>
 </body>
 </html>
