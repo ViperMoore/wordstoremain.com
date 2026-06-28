@@ -1,1 +1,244 @@
-yo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Speeches — Words That Remain</title>
+  <meta name="description" content="Browse all personalised eulogy speeches. For mothers, fathers, partners, friends and more. Three tiers from £19.99." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="shared.css" />
+  <style>
+    .tier-comparison { background:var(--card); }
+    .comparison-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.5rem; }
+    .comparison-card { background:var(--white); border:1px solid var(--border); padding:2rem 1.5rem; border-radius:2px; position:relative; }
+    .comparison-card.featured { border-color:var(--sage); }
+    .comparison-card.featured::before { content:"Most Popular"; position:absolute; top:-10px; left:50%; transform:translateX(-50%); background:var(--sage); color:var(--white); font-size:0.62rem; letter-spacing:0.12em; text-transform:uppercase; padding:3px 10px; border-radius:20px; white-space:nowrap; }
+    .comp-tier { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; color:var(--sage); margin-bottom:0.25rem; }
+    .comp-price { font-family:'Cormorant Garamond',serif; font-size:2.2rem; color:var(--charcoal); margin-bottom:0.25rem; }
+    .comp-sub { font-size:0.75rem; color:var(--muted); margin-bottom:1.5rem; }
+    .comp-features { list-style:none; display:flex; flex-direction:column; gap:0.6rem; margin-bottom:1.5rem; }
+    .comp-features li { font-size:0.85rem; color:var(--muted); display:flex; gap:0.5rem; align-items:flex-start; }
+    .comp-features li::before { content:"✦"; color:var(--gold); font-size:0.7rem; margin-top:0.25rem; flex-shrink:0; }
+    @media(max-width:900px){ .comparison-grid{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+<div class="overlay" id="overlay"></div>
+
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="speeches.html" class="active">Our Speeches</a>
+  <a href="blog.html">Journal</a>
+  <a href="index.html#how">How It Works</a>
+  <a href="index.html#stories">Stories</a>
+  <div class="mobile-currency">
+    <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
+    <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
+  </div>
+  <a href="#" class="mobile-cta">Order Now</a>
+</nav>
+
+<nav>
+  <a href="index.html" class="nav-logo">Words That Remain</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="speeches.html" class="active">Our Speeches</a></li>
+    <li><a href="blog.html">Journal</a></li>
+    <li><a href="index.html#how">How It Works</a></li>
+    <li><a href="index.html#stories">Stories</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="currency-switcher">
+      <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
+      <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
+    </div>
+    <a href="#" class="nav-cta">Order Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <p class="section-eyebrow">Our Speeches</p>
+  <h1>Find the speech that<br /><em>honours them best</em></h1>
+  <p>Six carefully crafted speech types, each designed for a different relationship and tone. Every order includes a personalised questionnaire, unlimited revisions, and a beautifully formatted PDF.</p>
+</div>
+
+<!-- Tier comparison -->
+<section class="tier-comparison">
+  <div class="section-inner">
+    <p class="section-eyebrow">Choose Your Tier</p>
+    <h2 class="section-title">Three tiers, every speech</h2>
+    <p class="section-subtitle">All tiers are available for every speech type below. Choose based on the time you have and the tribute they deserve.</p>
+    <div class="comparison-grid">
+      <div class="comparison-card">
+        <p class="comp-tier">Essential</p>
+        <p class="comp-price" data-gbp="£19.99" data-usd="$24.99">£19.99</p>
+        <p class="comp-sub">per speech</p>
+        <ul class="comp-features">
+          <li>2–3 minute speech (~300 words)</li>
+          <li>Standard PDF format</li>
+          <li>Delivered within 48 hours</li>
+          <li>One round of revisions</li>
+          <li>Personal questionnaire included</li>
+        </ul>
+        <a href="#all-speeches" class="btn-ghost">Choose a speech →</a>
+      </div>
+      <div class="comparison-card featured">
+        <p class="comp-tier">Heartfelt</p>
+        <p class="comp-price" data-gbp="£44.99" data-usd="$54.99">£44.99</p>
+        <p class="comp-sub">per speech</p>
+        <ul class="comp-features">
+          <li>4–5 minute speech (~600 words)</li>
+          <li>Beautifully designed PDF</li>
+          <li>Delivered within 24 hours</li>
+          <li>Two rounds of revisions</li>
+          <li>Personal questionnaire included</li>
+          <li>Delivery tips guide included</li>
+        </ul>
+        <a href="#all-speeches" class="btn-primary">Choose a speech →</a>
+      </div>
+      <div class="comparison-card">
+        <p class="comp-tier">Premium</p>
+        <p class="comp-price" data-gbp="£74.99" data-usd="$94.99">£74.99</p>
+        <p class="comp-sub">per speech</p>
+        <ul class="comp-features">
+          <li>6–7 minute speech (~900 words)</li>
+          <li>Premium designed PDF</li>
+          <li>Express 12-hour delivery</li>
+          <li>Unlimited revisions</li>
+          <li>Personal questionnaire included</li>
+          <li>Delivery tips guide included</li>
+          <li>Phone/WhatsApp support</li>
+        </ul>
+        <a href="#all-speeches" class="btn-ghost">Choose a speech →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- All 6 speeches -->
+<section id="all-speeches">
+  <div class="section-inner">
+    <p class="section-eyebrow">All Speech Types</p>
+    <h2 class="section-title">Six speeches, every relationship</h2>
+    <p class="section-subtitle">Can't find yours? The Custom Tribute at the bottom is built entirely around your loved one and your relationship with them.</p>
+
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-swatch swatch-mother"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="10" stroke="#B8977E" stroke-width="1.5"/><path d="M20 65 C20 50 28 42 40 42 C52 42 60 50 60 65" stroke="#B8977E" stroke-width="1.5" stroke-linecap="round"/><path d="M30 20 C26 14 22 10 18 12" stroke="#3D5246" stroke-width="1" stroke-linecap="round"/><path d="M50 20 C54 14 58 10 62 12" stroke="#3D5246" stroke-width="1" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <p class="product-tag">For a mother or grandmother</p>
+          <h3 class="product-name">A Mother's Farewell</h3>
+          <p class="product-desc">Warm, tender, and deeply personal. Written to honour the woman who shaped your world — her strength, her love, and the quiet ways she held everything together.</p>
+          <div class="tiers">
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Essential</span><span class="tier-desc">2–3 min · Standard PDF · 48hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£19.99" data-usd="$24.99">£19.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Heartfelt</span><span class="tier-desc">4–5 min · Designed PDF · 24hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£44.99" data-usd="$54.99">£44.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Premium</span><span class="tier-desc">6–7 min · Premium PDF · 12hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£74.99" data-usd="$94.99">£74.99</span><span class="tier-cta">Order →</span></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-swatch swatch-father"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="28" r="10" stroke="#5A7A66" stroke-width="1.5"/><path d="M20 65 C20 50 28 42 40 42 C52 42 60 50 60 65" stroke="#5A7A66" stroke-width="1.5" stroke-linecap="round"/><path d="M25 18 L18 10 M40 16 L40 8 M55 18 L62 10" stroke="#3D5246" stroke-width="1" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <p class="product-tag">For a father or grandfather</p>
+          <h3 class="product-name">A Father's Tribute</h3>
+          <p class="product-desc">Dignified, heartfelt, and true. A speech that captures the man he was — his values, his humour, his lessons — and the lasting mark he left on everyone who knew him.</p>
+          <div class="tiers">
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Essential</span><span class="tier-desc">2–3 min · Standard PDF · 48hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£19.99" data-usd="$24.99">£19.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Heartfelt</span><span class="tier-desc">4–5 min · Designed PDF · 24hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£44.99" data-usd="$54.99">£44.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Premium</span><span class="tier-desc">6–7 min · Premium PDF · 12hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£74.99" data-usd="$94.99">£74.99</span><span class="tier-cta">Order →</span></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-swatch swatch-partner"><svg viewBox="0 0 80 80" fill="none"><path d="M40 55 C40 55 18 42 18 28 C18 20 24 14 32 14 C36 14 40 17 40 17 C40 17 44 14 48 14 C56 14 62 20 62 28 C62 42 40 55 40 55Z" stroke="#7A6A8A" stroke-width="1.5" fill="none"/></svg></div>
+        <div class="product-body">
+          <p class="product-tag">For a spouse or partner</p>
+          <h3 class="product-name">A Love Remembered</h3>
+          <p class="product-desc">Intimate and deeply moving. For the person who was your home — written to capture a love story, a partnership, and the irreplaceable presence of a life shared.</p>
+          <div class="tiers">
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Essential</span><span class="tier-desc">2–3 min · Standard PDF · 48hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£19.99" data-usd="$24.99">£19.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Heartfelt</span><span class="tier-desc">4–5 min · Designed PDF · 24hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£44.99" data-usd="$54.99">£44.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Premium</span><span class="tier-desc">6–7 min · Premium PDF · 12hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£74.99" data-usd="$94.99">£74.99</span><span class="tier-cta">Order →</span></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-swatch swatch-friend"><svg viewBox="0 0 80 80" fill="none"><circle cx="30" cy="30" r="9" stroke="#3D5246" stroke-width="1.5"/><circle cx="52" cy="30" r="9" stroke="#5A7A66" stroke-width="1.5"/><path d="M14 62 C14 50 21 43 30 43" stroke="#3D5246" stroke-width="1.5" stroke-linecap="round"/><path d="M66 62 C66 50 59 43 52 43" stroke="#5A7A66" stroke-width="1.5" stroke-linecap="round"/><path d="M30 43 C36 48 46 48 52 43" stroke="#B8977E" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <p class="product-tag">For a dear friend</p>
+          <h3 class="product-name">A Friend's Goodbye</h3>
+          <p class="product-desc">Warm, honest, and alive with the spirit of your friendship. A speech that brings laughter and tears in equal measure — exactly as they would have wanted.</p>
+          <div class="tiers">
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Essential</span><span class="tier-desc">2–3 min · Standard PDF · 48hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£19.99" data-usd="$24.99">£19.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Heartfelt</span><span class="tier-desc">4–5 min · Designed PDF · 24hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£44.99" data-usd="$54.99">£44.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Premium</span><span class="tier-desc">6–7 min · Premium PDF · 12hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£74.99" data-usd="$94.99">£74.99</span><span class="tier-cta">Order →</span></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-swatch swatch-young"><svg viewBox="0 0 80 80" fill="none"><circle cx="40" cy="35" r="12" stroke="#B8977E" stroke-width="1.5"/><path d="M40 23 L40 15 M52 28 L58 22 M28 28 L22 22" stroke="#B8977E" stroke-width="1.2" stroke-linecap="round"/><path d="M22 55 C22 46 30 40 40 40 C50 40 58 46 58 55" stroke="#3D5246" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <p class="product-tag">For a young person</p>
+          <h3 class="product-name">A Life Too Short</h3>
+          <p class="product-desc">Gentle, brave, and full of light. A speech that celebrates everything they were and everything they brought — honouring a life that, though brief, was deeply felt by all.</p>
+          <div class="tiers">
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Essential</span><span class="tier-desc">2–3 min · Standard PDF · 48hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£19.99" data-usd="$24.99">£19.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Heartfelt</span><span class="tier-desc">4–5 min · Designed PDF · 24hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£44.99" data-usd="$54.99">£44.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Premium</span><span class="tier-desc">6–7 min · Premium PDF · 12hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£74.99" data-usd="$94.99">£74.99</span><span class="tier-cta">Order →</span></div></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-swatch swatch-custom"><svg viewBox="0 0 80 80" fill="none"><path d="M40 18 C40 18 25 30 25 42 C25 52 32 58 40 58 C48 58 55 52 55 42 C55 30 40 18 40 18Z" stroke="#D4B99A" stroke-width="1.5" fill="none"/><path d="M33 36 C33 36 36 38 40 38 C44 38 47 36 47 36" stroke="#B8977E" stroke-width="1.2" stroke-linecap="round"/></svg></div>
+        <div class="product-body">
+          <p class="product-tag">For any relationship</p>
+          <h3 class="product-name">A Custom Tribute</h3>
+          <p class="product-desc">Not every relationship fits a category — and that's perfectly understood. This speech is built entirely around your loved one and whoever they were to you.</p>
+          <div class="tiers">
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Essential</span><span class="tier-desc">2–3 min · Standard PDF · 48hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£19.99" data-usd="$24.99">£19.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Heartfelt</span><span class="tier-desc">4–5 min · Designed PDF · 24hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£44.99" data-usd="$54.99">£44.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="#" class="tier"><div class="tier-left"><span class="tier-name">Premium</span><span class="tier-desc">6–7 min · Premium PDF · 12hr</span></div><div class="tier-right"><span class="tier-price" data-gbp="£74.99" data-usd="$94.99">£74.99</span><span class="tier-cta">Order →</span></div></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="cta-banner">
+  <div class="section-inner">
+    <p class="section-eyebrow">Not sure which to choose?</p>
+    <h2 class="section-title">We're here to help</h2>
+    <p>If you're unsure which speech type or tier is right for you, just reach out. We'll guide you gently through the decision — no pressure, no obligation.</p>
+    <a href="mailto:hello@wordsthatremain.com" class="btn-primary">Get in Touch</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">Words That Remain</span>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="speeches.html">Our Speeches</a></li>
+      <li><a href="blog.html">Journal</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <p class="footer-copy">© 2026 Words That Remain. A service by Michelle Flares Studio.</p>
+</footer>
+
+<script src="shared.js"></script>
+</body>
+</html>
