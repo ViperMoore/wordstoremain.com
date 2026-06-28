@@ -27,30 +27,256 @@
 <meta name="twitter:description" content="Browse all personalised eulogy speeches. From £49.99, delivered within hours." />
 <meta name="twitter:image" content="https://wordstoremain.com/og-image.jpg" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://wordstoremain.com/"},{"@type":"ListItem","position":2,"name":"Our Speeches","item":"https://wordstoremain.com/speeches/"}]}
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://wordstoremain.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Our Speeches", "item": "https://wordstoremain.com/speeches/"}
+  ]
+}
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Service","name":"Personalised Eulogy Writing Service","provider":{"@type":"Organization","name":"Words to Remain","url":"https://wordstoremain.com"},"description":"Six personalised eulogy speech types for every relationship. Delivered to your inbox within hours.","areaServed":["GB","US","CA","AU"],"offers":[{"@type":"Offer","name":"Standard Eulogy","description":"Personalised eulogy delivered within 24 hours, 1 revision included.","price":"49.99","priceCurrency":"GBP","availability":"https://schema.org/InStock"},{"@type":"Offer","name":"Priority Eulogy","description":"Personalised eulogy delivered within 1 hour, 3 revisions and email support.","price":"79.99","priceCurrency":"GBP","availability":"https://schema.org/InStock"}]}
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Personalised Eulogy Writing Service",
+  "provider": {"@type": "Organization", "name": "Words to Remain", "url": "https://wordstoremain.com"},
+  "description": "Six personalised eulogy speech types for every relationship — mothers, fathers, partners, friends and more. Delivered to your inbox within hours.",
+  "areaServed": ["GB", "US", "CA", "AU"],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Standard Eulogy",
+      "description": "Personalised eulogy delivered within 24 hours, 1 revision included.",
+      "price": "49.99",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "url": "https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00"
+    },
+    {
+      "@type": "Offer",
+      "name": "Priority Eulogy",
+      "description": "Personalised eulogy delivered within 1 hour, 3 revisions and email support.",
+      "price": "79.99",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock",
+      "url": "https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01"
+    }
+  ]
+}
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/shared.css" />
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-STJFJG30T2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-STJFJG30T2');
+</script>
 </head>
 <body>
-<!-- NAV + FULL SPEECHES PAGE CONTENT PRESERVED AS ORIGINAL -->
-<!-- Only the <head> section above replaces the original head -->
-<!-- Paste the original speeches/index.html body content here -->
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="/">Home</a><a href="/speeches/" class="active">Our Speeches</a><a href="/blog/">Journal</a><a href="/#how">How It Works</a><a href="/#stories">Stories</a>
+  <div class="mobile-currency"><button class="currency-btn active" data-currency="gbp">🇬🇧 £</button><button class="currency-btn" data-currency="usd">🇺🇸 $</button></div>
+  <a href="/speeches/" class="mobile-cta">Order Now</a>
+</nav>
+<nav>
+  <a href="/" class="nav-logo">Words to Remain</a>
+  <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/speeches/" class="active">Our Speeches</a></li><li><a href="/blog/">Journal</a></li><li><a href="/#how">How It Works</a></li><li><a href="/#stories">Stories</a></li></ul>
+  <div class="nav-right">
+    <div class="currency-switcher"><button class="currency-btn active" data-currency="gbp">🇬🇧 £</button><button class="currency-btn" data-currency="usd">🇺🇸 $</button></div>
+    <a href="/speeches/" class="nav-cta">Order Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="section-inner">
+    <p class="section-eyebrow">Our Speeches</p>
+    <h1 class="section-title">Find the speech that <em>honours them best</em></h1>
+    <p class="section-subtitle">Six carefully crafted speech types, each designed for a different relationship and tone. Every order includes a personal questionnaire and is delivered directly to your inbox.</p>
+  </div>
+</section>
+
+<section class="how-bg">
+  <div class="section-inner">
+    <p class="section-eyebrow">Choose Your Option</p>
+    <h2 class="section-title">Two simple options</h2>
+    <p class="section-subtitle">Choose the speech type below, then select your option at checkout.</p>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Standard</h3>
+        <p class="price"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span> <span class="per">per speech</span></p>
+        <ul>
+          <li>A personalised eulogy, written with care</li>
+          <li>Any length — short, medium or longer</li>
+          <li>Delivered to your inbox within 24 hours</li>
+          <li>1 round of revisions included</li>
+          <li>Personal questionnaire included</li>
+        </ul>
+        <a href="#all-speeches" class="btn-ghost">Choose a speech →</a>
+      </div>
+      <div class="pricing-card popular">
+        <h3>Priority</h3>
+        <p class="price"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span> <span class="per">per speech</span></p>
+        <ul>
+          <li>A personalised eulogy, written with care</li>
+          <li>Any length — short, medium or longer</li>
+          <li>Delivered to your inbox within 1 hour</li>
+          <li>3 rounds of revisions included</li>
+          <li>Personal questionnaire included</li>
+          <li>Email Support included</li>
+        </ul>
+        <a href="#all-speeches" class="btn-primary">Choose a speech →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="all-speeches">
+  <div class="section-inner">
+    <p class="section-eyebrow">All Speech Types</p>
+    <h2 class="section-title">Six speeches, every relationship</h2>
+    <p class="section-subtitle">Can't find yours? The Custom Tribute is built entirely around your loved one and your relationship with them.</p>
+    <div class="products-grid">
+
+      <div class="product-card">
+        <div class="product-body">
+          <p class="product-tag">For a mother or grandmother</p>
+          <h3 class="product-name">A Mother's Farewell</h3>
+          <p class="product-desc">Warm, tender, and deeply personal. Written to honor the woman who shaped your world — her strength, her love, and the quiet ways she held everything together.</p>
+          <div class="tiers">
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier">
+              <div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Delivered within 24 hours · 1 revision</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+            <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular">
+              <span class="tier-badge">Most Popular</span>
+              <div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Delivered within 1 hour · 3 revisions + Email Support</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-body">
+          <p class="product-tag">For a father or grandfather</p>
+          <h3 class="product-name">A Father's Tribute</h3>
+          <p class="product-desc">Dignified, heartfelt, and true. A speech that captures the man he was — his values, his humor, his lessons — and the lasting mark he left on everyone who knew him.</p>
+          <div class="tiers">
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier">
+              <div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Delivered within 24 hours · 1 revision</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+            <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular">
+              <span class="tier-badge">Most Popular</span>
+              <div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Delivered within 1 hour · 3 revisions + Email Support</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-body">
+          <p class="product-tag">For a spouse or partner</p>
+          <h3 class="product-name">A Love Remembered</h3>
+          <p class="product-desc">Intimate and deeply moving. For the person who was your home — written to capture a love story, a partnership, and the irreplaceable presence of a life shared.</p>
+          <div class="tiers">
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier">
+              <div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Delivered within 24 hours · 1 revision</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+            <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular">
+              <span class="tier-badge">Most Popular</span>
+              <div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Delivered within 1 hour · 3 revisions + Email Support</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-body">
+          <p class="product-tag">For a dear friend</p>
+          <h3 class="product-name">A Friend's Goodbye</h3>
+          <p class="product-desc">Warm, honest, and alive with the spirit of your friendship. A speech that brings laughter and tears in equal measure — exactly as they would have wanted.</p>
+          <div class="tiers">
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier">
+              <div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Delivered within 24 hours · 1 revision</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+            <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular">
+              <span class="tier-badge">Most Popular</span>
+              <div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Delivered within 1 hour · 3 revisions + Email Support</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-body">
+          <p class="product-tag">For a young person</p>
+          <h3 class="product-name">A Life Too Short</h3>
+          <p class="product-desc">Gentle, brave, and full of light. A speech that celebrates everything they were and everything they brought — honoring a life that, though brief, was deeply felt by all.</p>
+          <div class="tiers">
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier">
+              <div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Delivered within 24 hours · 1 revision</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+            <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular">
+              <span class="tier-badge">Most Popular</span>
+              <div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Delivered within 1 hour · 3 revisions + Email Support</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-body">
+          <p class="product-tag">For any relationship</p>
+          <h3 class="product-name">A Custom Tribute</h3>
+          <p class="product-desc">Not every relationship fits a category — and that's perfectly understood. This speech is built entirely around your loved one and whoever they were to you.</p>
+          <div class="tiers">
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier">
+              <div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Delivered within 24 hours · 1 revision</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+            <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular">
+              <span class="tier-badge">Most Popular</span>
+              <div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Delivered within 1 hour · 3 revisions + Email Support</span></div>
+              <div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="how-bg">
+  <div class="section-inner" style="text-align:center; max-width:640px;">
+    <p class="section-eyebrow">Not sure which to choose?</p>
+    <h2 class="section-title">We're here to help</h2>
+    <p class="section-subtitle">If you're unsure which speech type is right for you, just reach out. We'll guide you gently — no pressure, no obligation.</p>
+    <a href="/contact/" class="btn-primary">Get in Touch</a>
+  </div>
+</section>
+
 <footer>
   <div class="footer-inner">
     <span class="footer-logo">Words to Remain</span>
-    <ul class="footer-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/speeches/">Our Speeches</a></li>
-      <li><a href="/blog/">Journal</a></li>
-      <li><a href="/privacy-policy/">Privacy Policy</a></li>
-      <li><a href="/contact/">Contact</a></li>
-    </ul>
+    <ul class="footer-links"><li><a href="/">Home</a></li><li><a href="/speeches/">Our Speeches</a></li><li><a href="/blog/">Journal</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul>
   </div>
   <p class="footer-copy">© 2026 Words to Remain. A service by <a href="https://michelleflares.com" target="_blank" rel="noopener">Michelle Flares Studio</a>.</p>
 </footer>
