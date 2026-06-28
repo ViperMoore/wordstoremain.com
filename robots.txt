@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /order/
+
+Sitemap: https://wordstoremain.com/sitemap.xml
