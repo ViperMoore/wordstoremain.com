@@ -42,51 +42,6 @@
   "mainEntityOfPage": {"@type": "WebPage", "@id": "https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/"}
 }
 </script>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="/shared.css" />
-<!-- Canonical -->
-<link rel="canonical" href="https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/" />
-<!-- hreflang -->
-<link rel="alternate" hreflang="en-GB" href="https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/" />
-<link rel="alternate" hreflang="en-US" href="https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/" />
-<link rel="alternate" hreflang="en" href="https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/" />
-<!-- Favicon -->
-<link rel="icon" type="image/x-icon" href="/favicon.ico" />
-<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-<!-- Open Graph -->
-<meta property="og:type" content="article" />
-<meta property="og:site_name" content="Words to Remain" />
-<meta property="og:title" content="What Makes a Eulogy Truly Memorable?" />
-<meta property="og:description" content="The best eulogies aren't polished speeches — they're honest, specific, and
-deeply human." />
-<meta property="og:url" content="https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/" />
-<meta property="og:image" content="https://wordstoremain.com/og-image.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:locale" content="en_GB" />
-<meta property="og:locale:alternate" content="en_US" />
-<!-- Schema -->
-<script type="application/ld+json">
-{
-"@context": "https://schema.org",
-"@type": "Article",
-"headline": "What Makes a Eulogy Truly Memorable?",
-"datePublished": "2026-06-01",
-"author": {"@type":"Organization","name":"Words to Remain"},
-"publisher": {"@type":"Organization","name":"Words to Remain"}
-}
-</script>
-<!-- Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-STJFJG30T2"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-STJFJG30T2');
-</script>
-</head>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -98,13 +53,103 @@ gtag('config', 'G-STJFJG30T2');
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/shared.css" />
+<style>
+/* ── shared.css inline copy for GitHub Pages preview ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root { --parchment:#FAF7F2; --sage:#3D5246; --sage-light:#5A7A66; --gold:#B8977E; --gold-light:#D4B99A; --charcoal:#2C2C2C; --card:#F0EBE3; --white:#FFFFFF; --border:#E0D9D0; --muted:#7A7065; }
+html { scroll-behavior: smooth; overflow-x: hidden; }
+body { background:var(--parchment); color:var(--charcoal); font-family:'Inter',sans-serif; font-weight:300; line-height:1.7; font-size:17px; overflow-x: hidden; }
+nav { position:fixed; top:0; left:0; right:0; z-index:200; background:rgba(250,247,242,0.95); backdrop-filter:blur(10px); border-bottom:1px solid var(--border); padding:0 5vw; height:64px; display:flex; align-items:center; justify-content:space-between; }
+.nav-logo { font-family:'Cormorant Garamond',serif; font-size:1.25rem; font-weight:400; color:var(--sage); text-decoration:none; letter-spacing:0.02em; z-index:201; }
+.nav-links { display:flex; gap:2rem; list-style:none; align-items:center; }
+.nav-links a { font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); text-decoration:none; transition:color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color:var(--sage); }
+.nav-right { display:flex; align-items:center; gap:1rem; z-index:201; }
+.currency-switcher { display:flex; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:2px; overflow:hidden; }
+.currency-btn { background:none; border:none; padding:0.35rem 0.7rem; font-size:0.73rem; font-family:'Inter',sans-serif; letter-spacing:0.04em; color:var(--muted); cursor:pointer; transition:background 0.2s,color 0.2s; white-space:nowrap; }
+.currency-btn.active { background:var(--sage); color:var(--white); }
+.currency-btn:hover:not(.active) { background:var(--border); color:var(--charcoal); }
+.nav-cta { background:var(--sage); color:var(--white)!important; padding:0.5rem 1.2rem; border-radius:2px; font-size:0.75rem!important; letter-spacing:0.08em!important; text-transform:uppercase; text-decoration:none; transition:background 0.2s; white-space:nowrap; }
+.nav-cta:hover { background:var(--sage-light)!important; }
+.hamburger { display:none; flex-direction:column; justify-content:center; gap:5px; width:28px; height:28px; background:none; border:none; cursor:pointer; padding:0; z-index:201; }
+.hamburger span { display:block; height:1.5px; background:var(--sage); border-radius:2px; transition:transform 0.3s,opacity 0.3s; transform-origin:center; }
+.hamburger.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity:0; transform:scaleX(0); }
+.hamburger.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
+.mobile-menu { position:fixed; top:0; right:0; width:min(320px,85vw); height:100vh; background:var(--parchment); border-left:1px solid var(--border); z-index:199; transform:translateX(110%); visibility:hidden; transition:transform 0.35s cubic-bezier(0.4,0,0.2,1); display:flex; flex-direction:column; padding:90px 2rem 2rem; }
+.mobile-menu.open { transform:translateX(0); visibility:visible; }
+.mobile-menu a { font-size:1.1rem; font-family:'Cormorant Garamond',serif; color:var(--charcoal); text-decoration:none; padding:0.9rem 0; border-bottom:1px solid var(--border); transition:color 0.2s; }
+.mobile-menu a:hover, .mobile-menu a.active { color:var(--sage); }
+.mobile-menu .mobile-cta { margin-top:1.5rem; background:var(--sage); color:var(--white)!important; text-align:center; padding:0.9rem 1.5rem; border:none; border-radius:2px; font-size:0.82rem!important; font-family:'Inter',sans-serif!important; letter-spacing:0.1em; text-transform:uppercase; }
+.mobile-currency { display:flex; gap:0.5rem; margin-top:1.5rem; }
+.overlay { position:fixed; inset:0; background:rgba(44,44,44,0.4); z-index:198; opacity:0; pointer-events:none; transition:opacity 0.3s; }
+.overlay.open { opacity:1; pointer-events:all; }
+.btn-primary { background:var(--sage); color:var(--white); padding:0.9rem 2rem; border:none; border-radius:2px; font-family:'Inter',sans-serif; font-size:0.82rem; font-weight:400; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none; cursor:pointer; transition:background 0.25s,transform 0.15s; display:inline-block; }
+.btn-primary:hover { background:var(--sage-light); transform:translateY(-1px); }
+.blog-tag { font-size:0.68rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:0.6rem; }
+footer { background:var(--charcoal); color:rgba(255,255,255,0.5); padding:3rem 5vw 1.5rem; }
+.footer-inner { max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; padding-bottom:2rem; border-bottom:1px solid rgba(255,255,255,0.08); margin-bottom:1.5rem; }
+.footer-logo { font-family:'Cormorant Garamond',serif; font-size:1.15rem; color:rgba(255,255,255,0.8); }
+.footer-links { display:flex; gap:1.5rem; list-style:none; flex-wrap:wrap; }
+.footer-links a { font-size:0.78rem; color:rgba(255,255,255,0.45); text-decoration:none; letter-spacing:0.06em; transition:color 0.2s; }
+.footer-links a:hover { color:var(--gold-light); }
+.footer-copy { max-width:1100px; margin:0 auto; font-size:0.75rem; color:rgba(255,255,255,0.3); }
+.footer-copy a { color:var(--gold-light); text-decoration:none; transition:color 0.2s; }
+.footer-copy a:hover { color:var(--white); }
+@media (max-width:900px) { .nav-links { display:none; } .hamburger { display:flex; } .nav-cta { display:none; } }
+@media (max-width:600px) { .footer-inner { flex-direction:column; } }
+
+/* ── PAGE-SPECIFIC: BLOG POST ── */
+.blog-post { padding-top: 64px; }
+.blog-post-inner { max-width: 680px; margin: 0 auto; padding: 4rem 5vw 6rem; }
+.back-link { display:inline-block; font-size:0.78rem; letter-spacing:0.06em; color:var(--muted); text-decoration:none; margin-bottom:2rem; transition:color 0.2s; }
+.back-link:hover { color:var(--sage); }
+.blog-post-inner h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(2rem,4vw,3rem); font-weight:300; color:var(--sage); line-height:1.2; margin-bottom:0.75rem; }
+.blog-post-inner h1 em { font-style:italic; color:var(--gold); }
+.blog-meta { font-size:0.78rem; color:var(--muted); margin-bottom:2.5rem; letter-spacing:0.04em; }
+.blog-post-inner p { margin-bottom:1.25rem; line-height:1.85; color:var(--charcoal); }
+.blog-post-inner h2 { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:500; color:var(--sage); margin:2.5rem 0 1rem; line-height:1.3; }
+.blog-post-inner h3 { font-family:'Cormorant Garamond',serif; font-size:1.25rem; font-weight:500; color:var(--sage); margin:2rem 0 0.75rem; }
+.blog-post-inner ul, .blog-post-inner ol { padding-left:1.4rem; margin-bottom:1.25rem; }
+.blog-post-inner li { margin-bottom:0.5rem; line-height:1.8; color:var(--charcoal); }
+.blog-post-inner strong { font-weight:500; color:var(--charcoal); }
+.blog-post-inner blockquote { border-left:3px solid var(--gold-light); padding:0.75rem 1.25rem; margin:1.5rem 0; font-family:'Cormorant Garamond',serif; font-size:1.15rem; font-style:italic; color:var(--muted); line-height:1.8; }
+.blog-post-inner details { border-top:1px solid var(--border); padding:1rem 0; }
+.blog-post-inner details:last-of-type { border-bottom:1px solid var(--border); }
+.blog-post-inner summary { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:500; color:var(--sage); cursor:pointer; list-style:none; padding-right:1rem; position:relative; }
+.blog-post-inner summary::after { content:'+'; position:absolute; right:0; color:var(--gold); transition:transform 0.2s; }
+.blog-post-inner details[open] summary::after { transform:rotate(45deg); }
+.blog-post-inner details p { margin-top:0.75rem; margin-bottom:0; font-size:0.95rem; color:var(--muted); }
+.article-cta { background:var(--sage); border-radius:2px; padding:2rem; margin:2.5rem 0; text-align:center; }
+.article-cta h3 { font-family:'Cormorant Garamond',serif; font-size:1.4rem; font-weight:400; color:var(--white); margin-bottom:0.75rem; }
+.article-cta p { color:rgba(255,255,255,0.8); font-size:0.95rem; margin-bottom:1.25rem; }
+.article-cta .btn-primary { background:var(--white); color:var(--sage); }
+.article-cta .btn-primary:hover { background:var(--gold-light); color:var(--sage); }
+.post-nav { display:flex; justify-content:space-between; gap:1rem; margin-top:3rem; padding-top:2rem; border-top:1px solid var(--border); flex-wrap:wrap; }
+.post-nav-link { font-size:0.82rem; color:var(--sage); text-decoration:none; letter-spacing:0.04em; transition:color 0.2s; }
+.post-nav-link:hover { color:var(--gold); }
+@media (max-width:600px) { .blog-post-inner { padding:2.5rem 5vw 4rem; } .post-nav { flex-direction:column; } }
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-STJFJG30T2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-STJFJG30T2');
+</script>
+</head>
 <body>
 <div class="overlay" id="overlay"></div>
-<nav class="mobile-menu" id="mobileMenu">
+<div class="mobile-menu" id="mobileMenu">
   <a href="/">Home</a><a href="/speeches/">Our Speeches</a><a href="/blog/" class="active">Journal</a><a href="/#how">How It Works</a><a href="/#stories">Stories</a>
   <div class="mobile-currency"><button class="currency-btn active" data-currency="gbp">&#127468;&#127463; £</button><button class="currency-btn" data-currency="usd">&#127482;&#127480; $</button></div>
   <a href="/speeches/" class="mobile-cta">Order Now</a>
-</nav>
+</div>
 <nav>
   <a href="/" class="nav-logo">Words to Remain</a>
   <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/speeches/">Our Speeches</a></li><li><a href="/blog/" class="active">Journal</a></li><li><a href="/#how">How It Works</a></li><li><a href="/#stories">Stories</a></li></ul>
