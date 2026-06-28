@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Words That Remain — Personalised Eulogy Writing Service</title>
+  <title>Words to Remain — Personalised Eulogy Writing Service</title>
   <meta name="description" content="A personalised eulogy, written with care and delivered within 24 hours. Let us find the words when you cannot." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="shared.css" />
+  <link rel="stylesheet" href="/shared.css" />
   <style>
     .hero { min-height:100vh; display:flex; align-items:center; padding:120px 5vw 80px; overflow:hidden; }
     .hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
@@ -27,41 +27,40 @@
     .step-number { font-family:'Cormorant Garamond',serif; font-size:3.5rem; font-weight:300; color:var(--border); line-height:1; margin-bottom:1rem; }
     .step-title { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:500; color:var(--sage); margin-bottom:0.75rem; }
     .step-text { font-size:0.9rem; color:var(--muted); line-height:1.8; }
-    @media(max-width:900px){ .hero-inner{grid-template-columns:1fr; gap:2rem;} .hero-botanical{display:none;} .steps-grid{grid-template-columns:1fr;} }
+    @media(max-width:900px){ .hero-inner{grid-template-columns:1fr;} .hero-botanical{display:none;} .steps-grid{grid-template-columns:1fr;} }
   </style>
 </head>
 <body>
 
 <div class="overlay" id="overlay"></div>
-
 <nav class="mobile-menu" id="mobileMenu">
-  <a href="index.html" class="active">Home</a>
-  <a href="speeches.html">Our Speeches</a>
-  <a href="blog.html">Journal</a>
-  <a href="index.html#how">How It Works</a>
-  <a href="index.html#stories">Stories</a>
+  <a href="/" class="active">Home</a>
+  <a href="/speeches/">Our Speeches</a>
+  <a href="/blog/">Journal</a>
+  <a href="/#how">How It Works</a>
+  <a href="/#stories">Stories</a>
   <div class="mobile-currency">
     <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
     <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
   </div>
-  <a href="speeches.html" class="mobile-cta">Order Now</a>
+  <a href="/speeches/" class="mobile-cta">Order Now</a>
 </nav>
 
 <nav>
-  <a href="index.html" class="nav-logo">Words That Remain</a>
+  <a href="/" class="nav-logo">Words to Remain</a>
   <ul class="nav-links">
-    <li><a href="index.html" class="active">Home</a></li>
-    <li><a href="speeches.html">Our Speeches</a></li>
-    <li><a href="blog.html">Journal</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#stories">Stories</a></li>
+    <li><a href="/" class="active">Home</a></li>
+    <li><a href="/speeches/">Our Speeches</a></li>
+    <li><a href="/blog/">Journal</a></li>
+    <li><a href="/#how">How It Works</a></li>
+    <li><a href="/#stories">Stories</a></li>
   </ul>
   <div class="nav-right">
     <div class="currency-switcher">
       <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
       <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
     </div>
-    <a href="speeches.html" class="nav-cta">Order Now</a>
+    <a href="/speeches/" class="nav-cta">Order Now</a>
     <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
   </div>
 </nav>
@@ -73,8 +72,8 @@
       <h1>The words you need,<br /><em>written with care</em></h1>
       <p class="hero-text">Grief is hard enough. Finding the right words shouldn't be. We write personalised eulogies that truly honour the person you've lost — beautifully crafted, delivered to your inbox within 24 hours.</p>
       <div class="hero-actions">
-        <a href="speeches.html" class="btn-primary">Choose Your Speech</a>
-        <a href="#how" class="btn-ghost">See how it works</a>
+        <a href="/speeches/" class="btn-primary">Choose Your Speech</a>
+        <a href="/#how" class="btn-ghost">See how it works</a>
       </div>
     </div>
     <div class="hero-botanical">
@@ -164,7 +163,7 @@
       </div>
 
     </div>
-    <div class="see-all-wrap"><a href="speeches.html" class="btn-primary">See All Speeches →</a></div>
+    <div class="see-all-wrap"><a href="/speeches/" class="btn-primary">See All Speeches →</a></div>
   </div>
 </section>
 
@@ -187,11 +186,11 @@
     <h2 class="section-title">Guidance for difficult moments</h2>
     <p class="section-subtitle">Honest, gentle articles to help you navigate grief, find words, and honour the people you love.</p>
     <div class="blog-grid">
-      <div class="blog-card"><p class="blog-tag">Writing a Eulogy</p><a href="blog-how-to-write-eulogy-mother.html" class="blog-title">How to write a eulogy for your mother: a gentle guide</a><p class="blog-meta">6 min read · June 2026</p><p class="blog-excerpt">Finding the right words for a mother's funeral is one of the hardest things you'll ever do. Here's a simple framework to help you begin.</p><a href="blog-how-to-write-eulogy-mother.html" class="blog-read-more">Read Article</a></div>
-      <div class="blog-card"><p class="blog-tag">Grief & Funerals</p><a href="blog.html" class="blog-title">What makes a eulogy truly memorable?</a><p class="blog-meta">5 min read · June 2026</p><p class="blog-excerpt">The best eulogies aren't polished speeches — they're honest, specific, and human. We share what we've learned from hundreds of tributes.</p><a href="blog.html" class="blog-read-more">Read Article</a></div>
-      <div class="blog-card"><p class="blog-tag">Practical Advice</p><a href="blog.html" class="blog-title">How to deliver a eulogy without breaking down</a><p class="blog-meta">4 min read · May 2026</p><p class="blog-excerpt">It's natural to cry. But there are gentle techniques that can help you stay present and deliver the speech your loved one deserves.</p><a href="blog.html" class="blog-read-more">Read Article</a></div>
+      <div class="blog-card"><p class="blog-tag">Writing a Eulogy</p><a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-title">How to write a eulogy for your mother: a gentle guide</a><p class="blog-meta">6 min read · June 2026</p><p class="blog-excerpt">Finding the right words for a mother's funeral is one of the hardest things you'll ever do. Here's a simple framework to help you begin.</p><a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-read-more">Read Article</a></div>
+      <div class="blog-card"><p class="blog-tag">Grief & Funerals</p><a href="/blog/" class="blog-title">What makes a eulogy truly memorable?</a><p class="blog-meta">5 min read · June 2026</p><p class="blog-excerpt">The best eulogies aren't polished speeches — they're honest, specific, and human. We share what we've learned from hundreds of tributes.</p><a href="/blog/" class="blog-read-more">Read Article</a></div>
+      <div class="blog-card"><p class="blog-tag">Practical Advice</p><a href="/blog/" class="blog-title">How to deliver a eulogy without breaking down</a><p class="blog-meta">4 min read · May 2026</p><p class="blog-excerpt">It's natural to cry. But there are gentle techniques that can help you stay present and deliver the speech your loved one deserves.</p><a href="/blog/" class="blog-read-more">Read Article</a></div>
     </div>
-    <div class="see-all-wrap" style="margin-top:2.5rem;"><a href="blog.html" class="btn-ghost">View All Articles →</a></div>
+    <div class="see-all-wrap" style="margin-top:2.5rem;"><a href="/blog/" class="btn-ghost">View All Articles →</a></div>
   </div>
 </section>
 
@@ -200,24 +199,24 @@
     <p class="section-eyebrow">Begin Today</p>
     <h2 class="section-title">You don't have to find the words alone</h2>
     <p>Let us carry this part for you. A personalised eulogy, written with tenderness, delivered to your inbox in 24 hours.</p>
-    <a href="speeches.html" class="btn-primary">Choose Your Speech — <span data-gbp="from £19.99" data-usd="from $24.99">from £19.99</span></a>
+    <a href="/speeches/" class="btn-primary">Choose Your Speech — <span data-gbp="from £19.99" data-usd="from $24.99">from £19.99</span></a>
   </div>
 </div>
 
 <footer>
   <div class="footer-inner">
-    <span class="footer-logo">Words That Remain</span>
+    <span class="footer-logo">Words to Remain</span>
     <ul class="footer-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="speeches.html">Our Speeches</a></li>
-      <li><a href="blog.html">Journal</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/speeches/">Our Speeches</a></li>
+      <li><a href="/blog/">Journal</a></li>
       <li><a href="#">Privacy Policy</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
   </div>
-  <p class="footer-copy">© 2026 Words That Remain. A service by Michelle Flares Studio.</p>
+  <p class="footer-copy">© 2026 Words to Remain. A service by Michelle Flares Studio.</p>
 </footer>
 
-<script src="shared.js"></script>
+<script src="/shared.js"></script>
 </body>
 </html>
