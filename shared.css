@@ -21,7 +21,7 @@ body {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   line-height: 1.7;
-  font-size: 16px;
+  font-size: 17px;
 }
 
 /* ── NAV ── */
@@ -233,7 +233,7 @@ section { padding: 6rem 5vw; }
   color: var(--muted);
   max-width: 540px;
   margin: 0 auto 3.5rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.8;
 }
 
@@ -342,7 +342,7 @@ section { padding: 6rem 5vw; }
 
 .product-name {
   font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   color: var(--sage);
   margin-bottom: 0.5rem;
@@ -350,7 +350,7 @@ section { padding: 6rem 5vw; }
 }
 
 .product-desc {
-  font-size: 0.83rem;
+  font-size: 0.93rem;
   color: var(--muted);
   line-height: 1.7;
   margin-bottom: 1.25rem;
@@ -397,11 +397,11 @@ section { padding: 6rem 5vw; }
 }
 
 .tier-left { display: flex; flex-direction: column; gap: 0.15rem; }
-.tier-name { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-weight: 500; color: var(--charcoal); }
-.tier-desc { font-size: 0.7rem; color: var(--muted); line-height: 1.4; }
+.tier-name { font-family: 'Cormorant Garamond', serif; font-size: 1.15rem; font-weight: 500; color: var(--charcoal); }
+.tier-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.4; }
 .tier-right { display: flex; flex-direction: column; align-items: flex-end; gap: 0.2rem; flex-shrink: 0; }
-.tier-price { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 400; color: var(--sage); white-space: nowrap; }
-.tier-cta { font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
+.tier-price { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 400; color: var(--sage); white-space: nowrap; }
+.tier-cta { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); }
 
 /* ── TESTIMONIALS ── */
 .testimonials-bg { background: var(--sage); }
@@ -485,7 +485,7 @@ footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 3re
 .blog-tag { font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.6rem; }
 .blog-title { font-family: 'Cormorant Garamond', serif; font-size: 1.25rem; font-weight: 500; color: var(--sage); line-height: 1.4; margin-bottom: 0.75rem; text-decoration: none; display: block; transition: color 0.2s; }
 .blog-title:hover { color: var(--gold); }
-.blog-excerpt { font-size: 0.87rem; color: var(--muted); line-height: 1.75; margin-bottom: 1rem; }
+.blog-excerpt { font-size: 0.93rem; color: var(--muted); line-height: 1.75; margin-bottom: 1rem; }
 .blog-meta { font-size: 0.73rem; color: var(--muted); margin-bottom: 0.75rem; letter-spacing: 0.04em; }
 .blog-read-more { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--sage); text-decoration: none; border-bottom: 1px solid var(--gold-light); padding-bottom: 1px; transition: color 0.2s; }
 .blog-read-more:hover { color: var(--gold); }
@@ -519,6 +519,21 @@ footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 3re
   section { padding: 4rem 5vw; }
   .trust-bar { gap: 1.25rem; }
   .footer-inner { flex-direction: column; }
+
+  body { font-size: 17px; }
+  .product-name { font-size: 1.6rem; }
+  .product-desc { font-size: 1rem; }
+  .product-tag { font-size: 0.75rem; }
+  .tier-name { font-size: 1.2rem; }
+  .tier-desc { font-size: 0.85rem; }
+  .tier-price { font-size: 1.4rem; }
+  .tier-cta { font-size: 0.78rem; }
+  .section-subtitle { font-size: 1.05rem; }
+  .blog-excerpt { font-size: 1rem; }
+  .testimonial-quote { font-size: 1.1rem; }
+  .trust-item { font-size: 0.88rem; }
+  .page-hero p { font-size: 1.05rem; }
+  .cta-banner p { font-size: 1.05rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
