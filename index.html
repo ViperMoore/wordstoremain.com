@@ -1,34 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Words to Remain — Personalised Eulogy Writing Service</title>
-  <meta name="description" content="A personalised eulogy, written with care and delivered within 24 hours. Let us find the words when you cannot." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/shared.css" />
-  <style>
-    .hero { min-height:100vh; display:flex; align-items:center; padding:120px 5vw 80px; overflow:hidden; }
-    .hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
-    .hero-eyebrow { font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:1.25rem; }
-    .hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(2.8rem,5vw,4.2rem); font-weight:300; line-height:1.15; color:var(--sage); margin-bottom:1.5rem; }
-    .hero h1 em { font-style:italic; color:var(--gold); }
-    .hero-text { font-size:1.05rem; color:var(--muted); max-width:440px; margin-bottom:2.5rem; line-height:1.8; }
-    .hero-actions { display:flex; gap:1rem; flex-wrap:wrap; align-items:center; }
-    .hero-botanical { display:flex; justify-content:center; align-items:center; }
-    .hero-botanical svg { width:100%; max-width:420px; height:auto; }
-    .botanical-path { stroke-dasharray:1200; stroke-dashoffset:1200; animation:draw 3.5s ease forwards 0.5s; }
-    @keyframes draw { to { stroke-dashoffset:0; } }
-    .how-bg { background:var(--card); }
-    .steps-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
-    .step-card { background:var(--white); padding:2.5rem 2rem; border-radius:2px; border-bottom:3px solid var(--gold-light); }
-    .step-number { font-family:'Cormorant Garamond',serif; font-size:3.5rem; font-weight:300; color:var(--border); line-height:1; margin-bottom:1rem; }
-    .step-title { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:500; color:var(--sage); margin-bottom:0.75rem; }
-    .step-text { font-size:0.9rem; color:var(--muted); line-height:1.8; }
-    @media(max-width:900px){ .hero-inner{grid-template-columns:1fr;} .hero-botanical{display:none;} .steps-grid{grid-template-columns:1fr;} }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Words to Remain — Personalised Eulogy Writing Service</title>
+<meta name="description" content="A personalised eulogy, written with care and delivered within hours. Let us find the words when you cannot." />
+
+<!-- Canonical -->
+<link rel="canonical" href="https://wordstoremain.com/" />
+
+<!-- hreflang -->
+<link rel="alternate" hreflang="en-GB" href="https://wordstoremain.com/" />
+<link rel="alternate" hreflang="en-US" href="https://wordstoremain.com/" />
+<link rel="alternate" hreflang="en" href="https://wordstoremain.com/" />
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+<!-- Open Graph -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Words to Remain" />
+<meta property="og:title" content="Words to Remain — Personalised Eulogy Writing Service" />
+<meta property="og:description" content="A personalised eulogy, written with care and delivered within hours. Let us find the words when you cannot." />
+<meta property="og:url" content="https://wordstoremain.com/" />
+<meta property="og:image" content="https://wordstoremain.com/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:locale" content="en_GB" />
+<meta property="og:locale:alternate" content="en_US" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Words to Remain — Personalised Eulogy Writing Service" />
+<meta name="twitter:description" content="A personalised eulogy, written with care and delivered within hours. Let us find the words when you cannot." />
+<meta name="twitter:image" content="https://wordstoremain.com/og-image.jpg" />
+
+<!-- Schema: Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Words to Remain",
+  "url": "https://wordstoremain.com",
+  "logo": "https://wordstoremain.com/og-image.jpg",
+  "description": "Personalised eulogy writing service delivering heartfelt, professional funeral speeches within hours.",
+  "email": "hello@wordstoremain.com",
+  "areaServed": ["GB", "US", "CA", "AU"],
+  "serviceType": "Eulogy Writing Service",
+  "sameAs": []
+}
+</script>
+
+<!-- Schema: Service -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Personalised Eulogy Writing Service",
+  "provider": {
+    "@type": "Organization",
+    "name": "Words to Remain",
+    "url": "https://wordstoremain.com"
+  },
+  "description": "We write personalised, beautifully crafted eulogies that truly honour the person you've lost — delivered to your inbox within hours.",
+  "areaServed": ["GB", "US", "CA", "AU"],
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Standard Eulogy",
+      "description": "Personalised eulogy, delivered within 24 hours, 1 revision included.",
+      "price": "49.99",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock"
+    },
+    {
+      "@type": "Offer",
+      "name": "Priority Eulogy",
+      "description": "Personalised eulogy, delivered within 1 hour, 3 revisions and email support included.",
+      "price": "79.99",
+      "priceCurrency": "GBP",
+      "availability": "https://schema.org/InStock"
+    }
+  ]
+}
+</script>
+
+<!-- Schema: AggregateRating / Reviews -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Words to Remain Eulogy Writing Service",
+  "url": "https://wordstoremain.com",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "3",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Sarah M." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "I couldn't find a single word. Within 24 hours I had a speech that made my whole family feel that Mum was truly seen. I will be forever grateful."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "James T." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "I was terrified of speaking. The speech they wrote was so perfectly my Dad that I actually felt calm when I stood up. People are still talking about it."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Rachel K." },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+      "reviewBody": "We used this for my best friend's funeral. She would have loved every word. It captured her completely — the humour, the warmth, all of it."
+    }
+  ]
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How quickly will I receive my eulogy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our Standard service delivers your personalised eulogy within 24 hours. Our Priority service delivers within 1 hour."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the eulogy writing process work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You choose your speech type and complete a secure payment. You then receive a short, gentle questionnaire about your loved one. We write a fully personalised eulogy and deliver it to your inbox within hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I request revisions?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The Standard option includes 1 round of revisions. The Priority option includes 3 rounds of revisions plus email support."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the service confidential?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Completely. Everything you share with us is 100% confidential and used only to write your personalised eulogy."
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/shared.css" />
+<style>
+.hero { min-height:100vh; display:flex; align-items:center; padding:120px 5vw 80px; overflow:hidden; }
+.hero-inner { max-width:1100px; margin:0 auto; width:100%; display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center; }
+.hero-eyebrow { font-size:0.72rem; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); margin-bottom:1.25rem; }
+.hero h1 { font-family:'Cormorant Garamond',serif; font-size:clamp(2.8rem,5vw,4.2rem); font-weight:300; line-height:1.15; color:var(--sage); margin-bottom:1.5rem; }
+.hero h1 em { font-style:italic; color:var(--gold); }
+.hero-text { font-size:1.05rem; color:var(--muted); max-width:440px; margin-bottom:2.5rem; line-height:1.8; }
+.hero-actions { display:flex; gap:1rem; flex-wrap:wrap; align-items:center; }
+.hero-botanical { display:flex; justify-content:center; align-items:center; }
+.hero-botanical svg { width:100%; max-width:420px; height:auto; }
+.botanical-path { stroke-dasharray:1200; stroke-dashoffset:1200; animation:draw 3.5s ease forwards 0.5s; }
+@keyframes draw { to { stroke-dashoffset:0; } }
+.how-bg { background:var(--card); }
+.steps-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
+.step-card { background:var(--white); padding:2.5rem 2rem; border-radius:2px; border-bottom:3px solid var(--gold-light); }
+.step-number { font-family:'Cormorant Garamond',serif; font-size:3.5rem; font-weight:300; color:var(--border); line-height:1; margin-bottom:1rem; }
+.step-title { font-family:'Cormorant Garamond',serif; font-size:1.3rem; font-weight:500; color:var(--sage); margin-bottom:0.75rem; }
+.step-text { font-size:0.9rem; color:var(--muted); line-height:1.8; }
+@media(max-width:900px){ .hero-inner{grid-template-columns:1fr;} .hero-botanical{display:none;} .steps-grid{grid-template-columns:1fr;} }
+</style>
 </head>
 <body>
 
@@ -127,7 +287,7 @@
           <h3 class="product-name">A Mother's Farewell</h3>
           <p class="product-desc">Warm, tender, and deeply personal. Written to honour the woman who shaped your world — her strength, her love, and the quiet ways she held everything together.</p>
           <div class="tiers">
-            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier"><div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Personalised eulogy · Delivered within 2 hours · 1 revision</span></div><div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier"><div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Personalised eulogy · Delivered within 24 hours · 1 revision</span></div><div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div></a>
             <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Personalised eulogy · Delivered within 1 hour · 3 revisions + Email Support</span></div><div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div></a>
           </div>
         </div>
@@ -140,7 +300,7 @@
           <h3 class="product-name">A Father's Tribute</h3>
           <p class="product-desc">Dignified, heartfelt, and true. A speech that captures the man he was — his values, his humor, his lessons — and the lasting mark he left on everyone who knew him.</p>
           <div class="tiers">
-            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier"><div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Personalised eulogy · Delivered within 2 hours · 1 revision</span></div><div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier"><div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Personalised eulogy · Delivered within 24 hours · 1 revision</span></div><div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div></a>
             <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Personalised eulogy · Delivered within 1 hour · 3 revisions + Email Support</span></div><div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div></a>
           </div>
         </div>
@@ -153,7 +313,7 @@
           <h3 class="product-name">A Love Remembered</h3>
           <p class="product-desc">Intimate and deeply moving. For the person who was your home — written to capture a love story, a partnership, and the irreplaceable presence of a life shared.</p>
           <div class="tiers">
-            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier"><div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Personalised eulogy · Delivered within 2 hours · 1 revision</span></div><div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div></a>
+            <a href="https://buy.stripe.com/4gM3cngTj0uz1KfeiXcQU00" class="tier"><div class="tier-left"><span class="tier-name">Standard</span><span class="tier-desc">Personalised eulogy · Delivered within 24 hours · 1 revision</span></div><div class="tier-right"><span class="tier-price" data-gbp="£49.99" data-usd="$62.99">£49.99</span><span class="tier-cta">Order →</span></div></a>
             <a href="https://buy.stripe.com/fZu8wH1Ypcdh2Oj4IncQU01" class="tier popular"><span class="tier-badge">Most Popular</span><div class="tier-left"><span class="tier-name">Priority</span><span class="tier-desc">Personalised eulogy · Delivered within 1 hour · 3 revisions + Email Support</span></div><div class="tier-right"><span class="tier-price" data-gbp="£79.99" data-usd="$99.99">£79.99</span><span class="tier-cta">Order →</span></div></a>
           </div>
         </div>
@@ -183,9 +343,9 @@
     <h2 class="section-title">Guidance for difficult moments</h2>
     <p class="section-subtitle">Honest, gentle articles to help you navigate grief, find words, and honour the people you love.</p>
     <div class="blog-grid">
-      <div class="blog-card"><p class="blog-tag">Writing a Eulogy</p><a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-title">How to write a eulogy for your mother: a gentle guide</a><p class="blog-meta">6 min read · June 2026</p><p class="blog-excerpt">Finding the right words for a mother's funeral is one of the hardest things you'll ever do. Here's a simple framework to help you begin.</p><a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-read-more">Read Article</a></div>
-      <div class="blog-card"><p class="blog-tag">Grief & Funerals</p><a href="/blog/what-makes-a-eulogy-truly-memorable/" class="blog-title">What makes a eulogy truly memorable?</a><p class="blog-meta">5 min read · June 2026</p><p class="blog-excerpt">The best eulogies aren't polished speeches — they're honest, specific, and human. We share what we've learned from hundreds of tributes.</p><a href="/blog/what-makes-a-eulogy-truly-memorable/" class="blog-read-more">Read Article</a></div>
-      <div class="blog-card"><p class="blog-tag">Practical Advice</p><a href="/blog/how-to-deliver-a-eulogy-without-breaking-down/" class="blog-title">How to deliver a eulogy without breaking down</a><p class="blog-meta">4 min read · May 2026</p><p class="blog-excerpt">It's natural to cry. But there are gentle techniques that can help you stay present and deliver the speech your loved one deserves.</p><a href="/blog/how-to-deliver-a-eulogy-without-breaking-down/" class="blog-read-more">Read Article</a></div>
+      <div class="blog-card"><p class="blog-tag">Writing a Eulogy</p><a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-title">How to write a eulogy for your mother: a gentle guide</a><p class="blog-meta">6 min read · <time datetime="2026-06-01">June 2026</time></p><p class="blog-excerpt">Finding the right words for a mother's funeral is one of the hardest things you'll ever do. Here's a simple framework to help you begin.</p><a href="/blog/how-to-write-eulogy-for-your-mother/" class="blog-read-more">Read Article</a></div>
+      <div class="blog-card"><p class="blog-tag">Grief & Funerals</p><a href="/blog/what-makes-a-eulogy-truly-memorable/" class="blog-title">What makes a eulogy truly memorable?</a><p class="blog-meta">5 min read · <time datetime="2026-06-01">June 2026</time></p><p class="blog-excerpt">The best eulogies aren't polished speeches — they're honest, specific, and human. We share what we've learned from hundreds of tributes.</p><a href="/blog/what-makes-a-eulogy-truly-memorable/" class="blog-read-more">Read Article</a></div>
+      <div class="blog-card"><p class="blog-tag">Practical Advice</p><a href="/blog/how-to-deliver-a-eulogy-without-breaking-down/" class="blog-title">How to deliver a eulogy without breaking down</a><p class="blog-meta">4 min read · <time datetime="2026-05-01">May 2026</time></p><p class="blog-excerpt">It's natural to cry. But there are gentle techniques that can help you stay present and deliver the speech your loved one deserves.</p><a href="/blog/how-to-deliver-a-eulogy-without-breaking-down/" class="blog-read-more">Read Article</a></div>
     </div>
     <div class="see-all-wrap" style="margin-top:2.5rem;"><a href="/blog/" class="btn-ghost">View All Articles →</a></div>
   </div>
@@ -211,7 +371,7 @@
       <li><a href="/contact/">Contact</a></li>
     </ul>
   </div>
-  <p class="footer-copy">© 2026 Words to Remain. </p>
+  <p class="footer-copy">© 2026 Words to Remain. A service by <a href="https://michelleflares.com" target="_blank" rel="noopener">Michelle Flares Studio</a>.</p>
 </footer>
 
 <script src="/shared.js"></script>
