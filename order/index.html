@@ -1,1 +1,160 @@
-11
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Your Speech — Words to Remain</title>
+  <meta name="description" content="Tell us about your loved one. We'll write a personalised eulogy and deliver it to your inbox within 24 hours." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/shared.css" />
+  <style>
+    .order-hero {
+      padding: 100px 5vw 40px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .order-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 300;
+      color: var(--sage);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .order-hero h1 em { font-style: italic; color: var(--gold); }
+
+    .order-hero p {
+      color: var(--muted);
+      max-width: 520px;
+      margin: 0 auto;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+
+    .trust-row {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      padding: 1.25rem 5vw;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .trust-row .trust-item { font-size: 0.78rem; }
+
+    .form-section {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 5vw 5rem;
+    }
+
+    .form-intro {
+      background: var(--card);
+      border-left: 3px solid var(--gold-light);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 2px 2px 0;
+      margin-bottom: 2.5rem;
+    }
+
+    .form-intro p {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .tally-wrapper {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 2px;
+      padding: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .tally-wrapper { padding: 1rem; }
+      .trust-row { gap: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-menu" id="mobileMenu">
+  <a href="/">Home</a>
+  <a href="/speeches/">Our Speeches</a>
+  <a href="/blog/">Journal</a>
+  <a href="/#how">How It Works</a>
+  <a href="/#stories">Stories</a>
+  <div class="mobile-currency">
+    <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
+    <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
+  </div>
+  <a href="/order/" class="mobile-cta">Order Now</a>
+</nav>
+
+<nav>
+  <a href="/" class="nav-logo">Words to Remain</a>
+  <ul class="nav-links">
+    <li><a href="/">Home</a></li>
+    <li><a href="/speeches/">Our Speeches</a></li>
+    <li><a href="/blog/">Journal</a></li>
+    <li><a href="/#how">How It Works</a></li>
+    <li><a href="/#stories">Stories</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="currency-switcher">
+      <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
+      <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
+    </div>
+    <a href="/order/" class="nav-cta active">Order Now</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="order-hero">
+  <p class="section-eyebrow">Your Order</p>
+  <h1>Tell us about<br /><em>the person you loved</em></h1>
+  <p>This form takes about 5 minutes. Your answers are confidential and will only be used to write your personalised speech.</p>
+</div>
+
+<div class="trust-row">
+  <div class="trust-item"><span class="icon">✦</span> 100% confidential</div>
+  <div class="trust-item"><span class="icon">✦</span> Delivered to your inbox</div>
+  <div class="trust-item"><span class="icon">✦</span> Within your chosen timeframe</div>
+  <div class="trust-item"><span class="icon">✦</span> Revisions included</div>
+</div>
+
+<div class="form-section">
+  <div class="form-intro">
+    <p>There are no right or wrong answers here. Just share what feels true — the memories, the moments, the things only you know. That's what makes a eulogy real.</p>
+  </div>
+
+  <div class="tally-wrapper">
+    <iframe data-tally-src="https://tally.so/embed/2EZk2M?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="2981" frameborder="0" marginheight="0" marginwidth="0" title="Words to Remain — Speech Form"></iframe>
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-logo">Words to Remain</span>
+    <ul class="footer-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/speeches/">Our Speeches</a></li>
+      <li><a href="/blog/">Journal</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <p class="footer-copy">© 2026 Words to Remain. A service by Michelle Flares Studio.</p>
+</footer>
+
+<script src="/shared.js"></script>
+</body>
+</html>
