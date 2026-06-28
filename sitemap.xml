@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Core pages -->
   <url>
     <loc>https://wordstoremain.com/</loc>
     <lastmod>2026-06-28</lastmod>
@@ -16,24 +17,95 @@
   </url>
 
   <url>
-    <loc>https://wordstoremain.com/order/</loc>
+    <loc>https://wordstoremain.com/blog/</loc>
     <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://wordstoremain.com/blog/</loc>
+    <loc>https://wordstoremain.com/contact/</loc>
     <lastmod>2026-06-28</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
 
+  <url>
+    <loc>https://wordstoremain.com/privacy-policy/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Blog articles -->
   <url>
     <loc>https://wordstoremain.com/blog/how-to-write-eulogy-for-your-mother/</loc>
     <lastmod>2026-06-28</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/how-to-deliver-a-eulogy-without-breaking-down/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/how-to-write-a-eulogy-for-your-father/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/what-to-do-when-you-cant-find-the-words/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/how-long-should-a-eulogy-be/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/how-to-write-a-eulogy-for-a-friend/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/how-to-write-a-eulogy-for-a-spouse/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/eulogy-examples-what-good-looks-like/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://wordstoremain.com/blog/how-to-write-a-eulogy-for-a-grandparent/</loc>
+    <lastmod>2026-06-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
 </urlset>
