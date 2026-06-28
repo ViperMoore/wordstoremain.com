@@ -627,6 +627,12 @@ footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 3re
   gtag('js', new Date());
   gtag('config', 'G-STJFJG30T2');
 </script>
+
+<style>
+@media (max-width: 600px) {
+  #pricing-options { grid-template-columns: 1fr !important; }
+}
+</style>
 </head>
 <body>
 <div class="overlay" id="overlay"></div>
@@ -658,7 +664,7 @@ footer { background: var(--charcoal); color: rgba(255,255,255,0.5); padding: 3re
     <p class="section-eyebrow">Choose Your Option</p>
     <h2 class="section-title">Two simple options</h2>
     <p class="section-subtitle">Choose the speech type below, then select your option at checkout.</p>
-    <div class="products-grid" style="grid-template-columns: repeat(2,1fr); max-width:720px; margin:0 auto;">
+    <div class="products-grid" style="grid-template-columns: repeat(2,1fr); max-width:720px; margin:0 auto;" id="pricing-options">
       <div class="product-card">
         <div class="product-body">
           <p class="product-tag">Standard</p>
