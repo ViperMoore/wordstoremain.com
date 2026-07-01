@@ -187,7 +187,9 @@ footer { background:var(--charcoal); color:rgba(255,255,255,0.5); padding:3rem 5
 
 .faq-item { border-top:1px solid var(--border); padding:1.1rem 0; max-width:720px; margin:0 auto; }
 .faq-item:last-of-type { border-bottom:1px solid var(--border); }
-.faq-item summary { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:500; color:var(--sage); cursor:pointer; list-style:none; padding-right:1.5rem; position:relative; }
+.faq-item summary { font-family:'Cormorant Garamond',serif; font-size:1.1rem; font-weight:500; color:var(--sage); cursor:pointer; list-style:none; display:block; padding-right:1.5rem; position:relative; }
+.faq-item summary::-webkit-details-marker { display:none; }
+.faq-item summary::marker { content:''; display:none; }
 .faq-item summary::after { content:'+'; position:absolute; right:0; color:var(--gold); transition:transform 0.2s; }
 .faq-item[open] summary::after { transform:rotate(45deg); }
 .faq-item p { margin-top:0.75rem; font-size:0.95rem; color:var(--muted); line-height:1.8; }
