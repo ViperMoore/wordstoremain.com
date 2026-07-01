@@ -1,1 +1,45 @@
-1
+<div class="overlay" id="overlay"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="/"{% if include.active == 'home' %} class="active"{% endif %}>Home</a>
+  <a href="/speeches/"{% if include.active == 'speeches' %} class="active"{% endif %}>Our Speeches</a>
+  <div class="mobile-submenu">
+    <a href="/speeches/eulogy-for-a-mother/">For a Mother</a>
+    <a href="/speeches/eulogy-for-a-father/">For a Father</a>
+    <a href="/speeches/eulogy-for-a-grandparent/">For a Grandparent</a>
+    <a href="/speeches/eulogy-for-a-spouse/">For a Spouse or Partner</a>
+    <a href="/speeches/eulogy-for-a-friend/">For a Friend</a>
+    <a href="/speeches/eulogy-for-a-young-person/">For a Young Person</a>
+    <a href="/speeches/a-custom-tribute/">A Custom Tribute</a>
+  </div>
+  <a href="/blog/"{% if include.active == 'guidance' %} class="active"{% endif %}>Guidance</a>
+  <a href="/#how">How It Works</a>
+  <a href="https://wordstoremain.com/contact/"{% if include.active == 'contact' %} class="active"{% endif %}>Contact Us</a>
+  <div class="mobile-currency"><button class="currency-btn active" data-currency="gbp">&#127468;&#127463; £</button><button class="currency-btn" data-currency="usd">&#127482;&#127480; $</button></div>
+  <a href="/speeches/" class="mobile-cta">View Speeches</a>
+</div>
+<nav>
+  <a href="/" class="nav-logo">Words to Remain</a>
+  <ul class="nav-links">
+    <li><a href="/"{% if include.active == 'home' %} class="active"{% endif %}>Home</a></li>
+    <li class="has-dropdown">
+      <a href="/speeches/"{% if include.active == 'speeches' %} class="active"{% endif %}>Our Speeches</a>
+      <div class="dropdown-menu">
+        <a href="/speeches/eulogy-for-a-mother/">For a Mother</a>
+        <a href="/speeches/eulogy-for-a-father/">For a Father</a>
+        <a href="/speeches/eulogy-for-a-grandparent/">For a Grandparent</a>
+        <a href="/speeches/eulogy-for-a-spouse/">For a Spouse or Partner</a>
+        <a href="/speeches/eulogy-for-a-friend/">For a Friend</a>
+        <a href="/speeches/eulogy-for-a-young-person/">For a Young Person</a>
+        <a href="/speeches/a-custom-tribute/">A Custom Tribute</a>
+      </div>
+    </li>
+    <li><a href="/blog/"{% if include.active == 'guidance' %} class="active"{% endif %}>Guidance</a></li>
+    <li><a href="/#how">How It Works</a></li>
+    <li><a href="https://wordstoremain.com/contact/"{% if include.active == 'contact' %} class="active"{% endif %}>Contact Us</a></li>
+  </ul>
+  <div class="nav-right">
+    <div class="currency-switcher"><button class="currency-btn active" data-currency="gbp">&#127468;&#127463; £</button><button class="currency-btn" data-currency="usd">&#127482;&#127480; $</button></div>
+    <a href="/speeches/" class="nav-cta">View Speeches</a>
+    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
