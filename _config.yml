@@ -1,0 +1,18 @@
+# Words to Remain — Jekyll configuration
+# GitHub Pages runs Jekyll automatically; this file just makes settings explicit.
+# No special plugins are used — only core Jekyll includes and front matter.
+
+title: Words to Remain
+url: "https://wordstoremain.com"
+
+# Every .html page that should use {% include %} tags needs front matter at the
+# very top of the file — even empty front matter works:
+#
+#   ---
+#   ---
+#
+# Files WITHOUT front matter (images, shared.css, shared.js, etc.) are copied
+# through untouched as static assets — nothing else changes for them.
+
+exclude:
+  - README.md
