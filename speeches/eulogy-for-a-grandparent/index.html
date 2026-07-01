@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,6 +106,13 @@ nav { position:fixed; top:0; left:0; right:0; z-index:200; background:rgba(250,2
 .nav-links { display:flex; gap:2rem; list-style:none; align-items:center; }
 .nav-links a { font-size:0.78rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); text-decoration:none; transition:color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color:var(--sage); }
+.has-dropdown { position:relative; }
+.has-dropdown > a::after { content:'▾'; margin-left:0.35em; font-size:0.7em; display:inline-block; }
+.dropdown-menu { position:absolute; top:100%; left:50%; transform:translateX(-50%); background:var(--white); border:1px solid var(--border); border-radius:4px; box-shadow:0 14px 34px rgba(44,44,44,0.12); padding:0.5rem 0; min-width:230px; display:none; flex-direction:column; z-index:250; margin-top:0; padding-top:0.6rem; }
+.has-dropdown:hover .dropdown-menu, .has-dropdown:focus-within .dropdown-menu { display:flex; }
+.dropdown-menu a { padding:0.65rem 1.4rem; font-size:0.8rem; letter-spacing:0.02em; text-transform:none; color:var(--charcoal); text-decoration:none; white-space:nowrap; transition:background 0.15s,color 0.15s; }
+.dropdown-menu a::after { content:none; }
+.dropdown-menu a:hover { background:var(--card); color:var(--sage); }
 .nav-right { display:flex; align-items:center; gap:1rem; z-index:201; }
 .currency-switcher { display:flex; align-items:center; background:var(--card); border:1px solid var(--border); border-radius:2px; overflow:hidden; }
 .currency-btn { background:none; border:none; padding:0.35rem 0.7rem; font-size:0.73rem; font-family:'Inter',sans-serif; letter-spacing:0.04em; color:var(--muted); cursor:pointer; transition:background 0.2s,color 0.2s; white-space:nowrap; }
@@ -119,6 +128,9 @@ nav { position:fixed; top:0; left:0; right:0; z-index:200; background:rgba(250,2
 .mobile-menu { position:fixed; top:0; right:0; width:min(320px,85vw); height:100vh; background:var(--parchment); border-left:1px solid var(--border); z-index:199; transform:translateX(110%); visibility:hidden; transition:transform 0.35s cubic-bezier(0.4,0,0.2,1); display:flex; flex-direction:column; padding:90px 2rem 2rem; }
 .mobile-menu.open { transform:translateX(0); visibility:visible; }
 .mobile-menu a { font-size:1.1rem; font-family:'Cormorant Garamond',serif; color:var(--charcoal); text-decoration:none; padding:0.9rem 0; border-bottom:1px solid var(--border); transition:color 0.2s; }
+.mobile-submenu { display:flex; flex-direction:column; padding-left:1.1rem; margin-top:-0.4rem; margin-bottom:0.4rem; }
+.mobile-submenu a { font-size:0.85rem; font-family:'Inter',sans-serif; font-weight:300; color:var(--muted); padding:0.55rem 0; border-bottom:none; }
+.mobile-submenu a:hover, .mobile-submenu a:active { color:var(--sage); }
 .mobile-menu a:hover, .mobile-menu a.active { color:var(--sage); }
 .mobile-menu .mobile-cta { margin-top:1.5rem; background:var(--sage); color:var(--white)!important; text-align:center; padding:0.9rem 1.5rem; border:none; border-radius:2px; font-size:0.82rem!important; font-family:'Inter',sans-serif!important; letter-spacing:0.1em; text-transform:uppercase; }
 .mobile-currency { display:flex; gap:0.5rem; margin-top:1.5rem; }
@@ -211,21 +223,7 @@ footer { background:var(--charcoal); color:rgba(255,255,255,0.5); padding:3rem 5
 </script>
 </head>
 <body>
-<div class="overlay" id="overlay"></div>
-<div class="mobile-menu" id="mobileMenu">
-  <a href="/">Home</a><a href="/speeches/" class="active">Our Speeches</a><a href="/blog/">Guidance</a><a href="/#how">How It Works</a><a href="/contact/">Contact Us</a>
-  <div class="mobile-currency"><button class="currency-btn active" data-currency="gbp">&#127468;&#127463; £</button><button class="currency-btn" data-currency="usd">&#127482;&#127480; $</button></div>
-  <a href="/speeches/" class="mobile-cta">View Speeches</a>
-</div>
-<nav>
-  <a href="/" class="nav-logo">Words to Remain</a>
-  <ul class="nav-links"><li><a href="/">Home</a></li><li><a href="/speeches/" class="active">Our Speeches</a></li><li><a href="/blog/">Guidance</a></li><li><a href="/#how">How It Works</a></li><li><a href="/contact/">Contact Us</a></li></ul>
-  <div class="nav-right">
-    <div class="currency-switcher"><button class="currency-btn active" data-currency="gbp">&#127468;&#127463; £</button><button class="currency-btn" data-currency="usd">&#127482;&#127480; $</button></div>
-    <a href="/speeches/" class="nav-cta">View Speeches</a>
-    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
+{% include nav.html active="speeches" %}
 
 <a href="/speeches/" class="back-link">← Back to all speeches</a>
 
@@ -336,13 +334,7 @@ footer { background:var(--charcoal); color:rgba(255,255,255,0.5); padding:3rem 5
   <a href="/blog/how-to-write-a-eulogy-for-a-grandparent/" class="btn-ghost">Read the guide →</a>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <span class="footer-logo">Words to Remain</span>
-    <ul class="footer-links"><li><a href="/">Home</a></li><li><a href="/speeches/">Our Speeches</a></li><li><a href="/blog/">Guidance</a></li><li><a href="/privacy-policy/">Privacy Policy</a></li><li><a href="/contact/">Contact</a></li></ul>
-  </div>
-  <p class="footer-copy">© 2026 Words to Remain. A service by <a href="https://michelleflares.com" target="_blank" rel="noopener">Michelle Flares Studio</a>.</p>
-</footer>
+{% include footer.html %}
 <script src="/shared.js"></script>
 </body>
 </html>
