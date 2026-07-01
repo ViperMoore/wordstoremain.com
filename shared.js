@@ -9,10 +9,22 @@
     try { localStorage.setItem('wtr-currency', currency); } catch(e) {}
   }
 
+  function getCookie(name) {
+    const match = document.cookie.match(new RegExp('(^|; )' + name + '=([^;]*)'));
+    return match ? decodeURIComponent(match[2]) : null;
+  }
+
   allBtns.forEach(btn => btn.addEventListener('click', () => setCurrency(btn.dataset.currency)));
 
-  let saved = 'gbp';
-  try { saved = localStorage.getItem('wtr-currency') || 'gbp'; } catch(e) {}
+  // Preference order: 1) an explicit choice the visitor already made (localStorage)
+  // 2) a geo-based default set by the Cloudflare Worker (cookie, first visit only)
+  // 3) GBP as the final fallback
+  let saved = null;
+  try { saved = localStorage.getItem('wtr-currency'); } catch(e) {}
+  if (!saved) {
+    const geo = getCookie('wtr-geo-currency');
+    saved = (geo === 'usd' || geo === 'gbp') ? geo : 'gbp';
+  }
   setCurrency(saved);
 
   // ── HAMBURGER ──
