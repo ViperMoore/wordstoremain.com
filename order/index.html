@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +13,17 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/shared.css" />
   <style>
+    .has-dropdown { position:relative; }
+    .has-dropdown > a::after { content:'▾'; margin-left:0.35em; font-size:0.7em; display:inline-block; }
+    .dropdown-menu { position:absolute; top:100%; left:50%; transform:translateX(-50%); background:var(--white); border:1px solid var(--border); border-radius:4px; box-shadow:0 14px 34px rgba(44,44,44,0.12); padding:0.5rem 0; min-width:230px; display:none; flex-direction:column; z-index:250; margin-top:0.6rem; }
+    .has-dropdown:hover .dropdown-menu, .has-dropdown:focus-within .dropdown-menu { display:flex; }
+    .dropdown-menu a { padding:0.65rem 1.4rem; font-size:0.8rem; letter-spacing:0.02em; text-transform:none; color:var(--charcoal); text-decoration:none; white-space:nowrap; transition:background 0.15s,color 0.15s; }
+    .dropdown-menu a::after { content:none; }
+    .dropdown-menu a:hover { background:var(--card); color:var(--sage); }
+    .mobile-submenu { display:flex; flex-direction:column; padding-left:1.1rem; margin-top:-0.4rem; margin-bottom:0.4rem; }
+    .mobile-submenu a { font-size:0.85rem; font-family:'Inter',sans-serif; font-weight:300; color:var(--muted); padding:0.55rem 0; border-bottom:none; }
+    .mobile-submenu a:hover, .mobile-submenu a:active { color:var(--sage); }
+
     .order-hero {
       padding: 100px 5vw 40px;
       text-align: center;
@@ -135,38 +148,7 @@
 </head>
 <body>
 
-<div class="overlay" id="overlay"></div>
-<nav class="mobile-menu" id="mobileMenu">
-  <a href="/">Home</a>
-  <a href="/speeches/">Our Speeches</a>
-  <a href="/blog/">Guidance</a>
-  <a href="/#how">How It Works</a>
-  <a href="https://wordstoremain.com/contact/">Contact Us</a>
-  <div class="mobile-currency">
-    <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
-    <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
-  </div>
-  <a href="/order/" class="mobile-cta">View Speeches</a>
-</nav>
-
-<nav>
-  <a href="/" class="nav-logo">Words to Remain</a>
-  <ul class="nav-links">
-    <li><a href="/">Home</a></li>
-    <li><a href="/speeches/">Our Speeches</a></li>
-    <li><a href="/blog/">Guidance</a></li>
-    <li><a href="/#how">How It Works</a></li>
-    <li><a href="https://wordstoremain.com/contact/">Contact Us</a></li>
-  </ul>
-  <div class="nav-right">
-    <div class="currency-switcher">
-      <button class="currency-btn active" data-currency="gbp">🇬🇧 £</button>
-      <button class="currency-btn" data-currency="usd">🇺🇸 $</button>
-    </div>
-    <a href="/order/" class="nav-cta active">View Speeches</a>
-    <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
-  </div>
-</nav>
+{% include nav.html %}
 
 <div class="order-hero">
   <p class="section-eyebrow">Your Order</p>
@@ -202,19 +184,7 @@
   </div>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <span class="footer-logo">Words to Remain</span>
-    <ul class="footer-links">
-      <li><a href="/">Home</a></li>
-      <li><a href="/speeches/">Our Speeches</a></li>
-      <li><a href="/blog/">Guidance</a></li>
-      <li><a href="/privacy-policy/">Privacy Policy</a></li>
-      <li><a href="/contact/">Contact</a></li>
-    </ul>
-  </div>
-  <p class="footer-copy">© 2026 Words to Remain.</p>
-</footer>
+{% include footer.html %}
 
 <script src="/shared.js"></script>
 <script>
