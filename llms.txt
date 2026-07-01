@@ -1,6 +1,6 @@
 # Words to Remain
 
-> Words to Remain is a professional eulogy and memorial speech writing service. We craft personalized, heartfelt speeches that honor the lives of those who have passed — delivered digitally within hours, directly to your inbox.
+> Words to Remain is a professional eulogy and memorial speech writing service. We craft personalised, heartfelt speeches that honour the lives of those who have passed — delivered digitally within hours, directly to your inbox.
 
 ## About
 
@@ -8,15 +8,15 @@ Words to Remain helps families and loved ones find the right words during one of
 
 We write six types of memorial speeches:
 - Eulogies (general memorial speeches)
-- Son's eulogy for a father
-- Daughter's eulogy for a mother
+- Eulogy for a father
+- Eulogy for a mother
 - Eulogy for a spouse or partner
 - Eulogy for a grandparent
 - Eulogy for a friend
 
 ## Services & Pricing
 
-**Standard — £49.99**
+**Standard — £49.99 / $62**
 - Delivered within 24 hours
 - 1 revision included
 - Delivered via email
@@ -31,18 +31,34 @@ We write six types of memorial speeches:
 
 1. Choose your speech type and tier at wordstoremain.com/speeches/
 2. Complete a short order form sharing memories and details about your loved one
-3. Receive your personalized speech by email — ready to deliver
+3. Receive your personalised speech by email — ready to deliver
+
+## Guidance (Journal)
+
+Free articles on writing eulogies, navigating grief, and finding the right words — written by Michelle Flares, the team behind hundreds of personalised eulogies.
+
+- [How to write a eulogy: a gentle, step-by-step guide](https://wordstoremain.com/blog/how-to-write-a-eulogy/): A complete walkthrough covering what a eulogy is, how to structure one in five steps, delivery tips, and what to do if you'd rather not write it alone.
+- [How to write a eulogy for your mother](https://wordstoremain.com/blog/how-to-write-eulogy-for-your-mother/): A gentle framework for finding the right words for a mother's funeral.
+- [How to write a eulogy for your father](https://wordstoremain.com/blog/how-to-write-a-eulogy-for-your-father/): Guidance for capturing a father whose love may have shown itself in quiet, unspoken ways.
+- [How to write a eulogy for a spouse or partner](https://wordstoremain.com/blog/how-to-write-a-eulogy-for-a-spouse/): Finding words to honour the person who was your home, while speaking as the most bereaved person in the room.
+- [How to write a eulogy for a friend](https://wordstoremain.com/blog/how-to-write-a-eulogy-for-a-friend/): Honouring a friendship and explaining what someone meant to people who knew a different side of them.
+- [How to write a eulogy for a grandparent](https://wordstoremain.com/blog/how-to-write-a-eulogy-for-a-grandparent/): Speaking to a whole family's different relationships with one person, and honouring a lifetime of love and history.
+- [What makes a eulogy truly memorable?](https://wordstoremain.com/blog/what-makes-a-eulogy-truly-memorable/): What separates a eulogy people remember from a polished but forgettable speech.
+- [Eulogy examples: what good looks like](https://wordstoremain.com/blog/eulogy-examples-what-good-looks-like/): Annotated examples showing the qualities that make a eulogy land.
+- [Eulogy length: how long should a funeral speech be?](https://wordstoremain.com/blog/how-long-should-a-eulogy-be/): Practical guidance on calibrating length — usually five to seven minutes, or 700–900 words.
+- [How to deliver a eulogy without breaking down](https://wordstoremain.com/blog/how-to-deliver-a-eulogy-without-breaking-down/): Techniques for staying present while delivering an emotional speech.
+- [What to do when you can't find the words](https://wordstoremain.com/blog/what-to-do-when-you-cant-find-the-words/): Help for the blank page moment, when grief makes writing feel impossible.
 
 ## Target Audience
 
-Families, friends, and colleagues who need to deliver a eulogy or memorial speech and want professional help expressing their grief and celebrating a life well lived. Primarily serving English-speaking customers in the United Kingdom and internationally.
+Families, friends, and colleagues who need to deliver a eulogy or memorial speech and want professional help expressing their grief and celebrating a life well lived. Primarily serving English-speaking customers in the United Kingdom and internationally, with GBP and USD pricing available.
 
 ## Website
 
 - Homepage: https://wordstoremain.com
 - Speech types: https://wordstoremain.com/speeches/
 - Order: https://wordstoremain.com/order/
-- Blog: https://wordstoremain.com/blog/
+- Guidance (blog): https://wordstoremain.com/blog/
 
 ## Contact
 
