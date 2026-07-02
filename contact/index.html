@@ -158,7 +158,7 @@ footer { background:var(--charcoal); color:rgba(255,255,255,0.5); padding:3rem 5
     <p style="color:var(--muted); margin-bottom:0.5rem;"><strong>We respond to every message.</strong></p>
     <p style="color:var(--muted); margin-bottom:2rem;">If you've placed an order and have questions about your speech, please include your name and the name of your loved one so we can help you quickly. We understand that time is often short. We'll always do our best to get back to you as soon as possible.</p>
 
-    <form class="contact-form" id="contactForm" action="https://formspree.io/f/hello@wordstoremain.com" method="POST">
+    <form class="contact-form" id="contactForm" action="https://formspree.io/f/mojowkrr" method="POST">
       <div class="form-group">
         <label for="name">Your name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required />
@@ -199,5 +199,34 @@ footer { background:var(--charcoal); color:rgba(255,255,255,0.5); padding:3rem 5
 
 {% include footer.html %}
 <script src="/shared.js"></script>
+<script>
+(function() {
+  const form = document.getElementById('contactForm');
+  const success = document.getElementById('contactSuccess');
+  if (!form) return;
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch(form.action, {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(response => {
+      if (response.ok) {
+        form.style.display = 'none';
+        success.style.display = 'block';
+        success.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        response.json().then(data => {
+          alert(data.errors ? data.errors.map(e => e.message).join(', ') : 'Oops! There was a problem submitting your message.');
+        });
+      }
+    }).catch(() => {
+      alert('Oops! There was a problem submitting your message. Please email us directly at hello@wordstoremain.com.');
+    });
+  });
+})();
+</script>
 </body>
 </html>
